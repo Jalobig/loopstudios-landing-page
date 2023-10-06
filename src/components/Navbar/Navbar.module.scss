@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    width: 90%;
+    margin: auto;
+    padding-top: 4rem;
+    &__logo{
+    }
+    &__nav{
+        list-style: none;
+        padding-inline-start: 0;
+        display: flex;
+        &-item{
+            &:not(:last-child){
+                margin-right: 1.8rem;
+            }
+        }
+    }
+}

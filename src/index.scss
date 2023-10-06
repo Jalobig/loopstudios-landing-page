@@ -1,0 +1,30 @@
+:root {
+  // Colors
+  /// Primary
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-shadow: hsla(0, 0%, 0%, 0.3);
+  --color-grey: hsl(0, 0%, 55%);
+  --color-grey-dark: hsl(0, 0%, 41%);
+
+  //// Fonts
+  
+  --heading-font: "Josefin Sans", sans-serif;
+  
+  //// Widths
+  
+  --max-width: 69.375rem
+
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Alata", sans-serif;
+}

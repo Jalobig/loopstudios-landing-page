@@ -1,0 +1,14 @@
+.intro{
+    margin: 8rem auto;
+    max-width: var(--max-width);
+    width: 90%;
+    &__h1{
+        font-family: var(--heading-font);
+        font-weight: 300;
+        font-size: 4rem;
+        text-transform: uppercase;
+        border: 2px solid var(--color-white);
+        max-width: calc(var(--max-width)/2);
+        padding:1.5rem 2rem 0.5rem;
+    }
+}

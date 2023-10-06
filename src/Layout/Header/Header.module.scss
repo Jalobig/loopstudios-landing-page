@@ -1,0 +1,13 @@
+.header{
+    position: relative;
+    color: var(--color-white);
+    height: 40rem;
+    &__bg{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}

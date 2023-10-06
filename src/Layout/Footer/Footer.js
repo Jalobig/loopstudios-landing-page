@@ -26,10 +26,10 @@ const Footer = () => {
         </nav>
         <div className={classes.footer__column}>
           <div className={classes.footer__social}>
-            <img src={FacebookIcon} alt="Facebook Icon" className={classes.footer__icon} />
-            <img src={TwitterIcon} alt="Twitter Icon" className={classes.footer__icon} />
-            <img src={PinterestIcon} alt="Pinterest Icon" className={classes.footer__icon} />
-            <img src={InstagramIcon} alt="Instagram Icon" className={classes.footer__icon} />
+            <div className={classes.footer__group}><img src={FacebookIcon} alt="Facebook Icon" className={classes.footer__icon} /></div>
+            <div className={classes.footer__group}><img src={TwitterIcon} alt="Twitter Icon" className={classes.footer__icon} /></div>
+            <div className={classes.footer__group}><img src={PinterestIcon} alt="Pinterest Icon" className={classes.footer__icon} /></div>
+            <div className={classes.footer__group}><img src={InstagramIcon} alt="Instagram Icon" className={classes.footer__icon} /></div>
           </div>
           <p className={classes.footer__copy}>
             © 2021 Loopstudios. All rights reserved.

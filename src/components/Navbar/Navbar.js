@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import classes from "./Navbar.module.scss";
 import Logo from "../../images/logo.svg";
-import IconClose from "../../images/icon-close.svg";
 import IconHamburger from "../../images/icon-hamburger.svg";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import MenuMobile from "../MenuMobile/MenuMobile";
 
 const Navbar = (props) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const media = useMediaQuery("only screen and (max-width:660px)");
   const menuHandler = () => {
     setIsActive((prevState) => !prevState);
@@ -17,16 +17,16 @@ const Navbar = (props) => {
         src={Logo}
         alt="Logo of loopstudios"
         className={classes.navbar__logo}
-        onClick={menuHandler}
       />
       {media && (
         <img
           src={IconHamburger}
           alt="Icon Hamburger"
           className={classes.navbar__icon}
+          onClick={menuHandler}
         />
       )}
-      {(!media || isActive) && (
+      {!media  && (
         <ul className={classes.navbar__nav}>
           <li className={classes["navbar__nav-item"]}>About</li>
           <li className={classes["navbar__nav-item"]}>Careers</li>
@@ -35,6 +35,7 @@ const Navbar = (props) => {
           <li className={classes["navbar__nav-item"]}>Support</li>
         </ul>
       )}
+      {media && isActive && <MenuMobile onClose={menuHandler} />}
     </nav>
   );
 };

@@ -15,10 +15,16 @@
             width: 10rem;
     }
   }
+  &__icon{
+    cursor: pointer;
+  }
   &__nav {
     list-style: none;
     padding-inline-start: 0;
     display: flex;
+    @media only screen and (max-width:660px) {
+      
+    }
     &-item {
       display: flex;
       flex-direction: column;

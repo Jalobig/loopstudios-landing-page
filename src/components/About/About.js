@@ -1,10 +1,17 @@
 import React from "react";
 import classes from "./About.module.scss";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import Image from "../../images/desktop/image-interactive.jpg";
+import ImageMobile from "../../images/mobile/image-interactive.jpg";
 const About = () => {
+  const media = useMediaQuery("only screen and (max-width:460px)");
   return (
     <div className={classes.about}>
-      <img src={Image} alt="Man playing VR" className={classes.about__img} />
+      <img
+        src={media ? ImageMobile : Image}
+        alt="Man playing VR"
+        className={classes.about__img}
+      />
       <div className={classes.about__info}>
         <h1 className={classes.about__heading}>The leader in interactive VR</h1>
         <p className={classes.about__text}>

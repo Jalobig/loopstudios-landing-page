@@ -18,6 +18,7 @@ import ImageCuriosityMobile from "../../images/mobile/image-curiosity.jpg";
 import ImageFishEyeDesktop from "../../images/desktop/image-fisheye.jpg";
 import ImageFishEyeMobile from "../../images/mobile/image-fisheye.jpg";
 import CreationItem from "../CreationItem/CreationItem";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const CREATIONS = [
   {
@@ -63,11 +64,12 @@ const CREATIONS = [
 ];
 
 const Creations = () => {
+  const media = useMediaQuery("only screen and (max-width:583px)");
   return (
     <div className={classes.creations}>
       <div className={classes.creations__row}>
         <h1 className={classes.creations__heading}>Our Creations</h1>
-        <Button>See all</Button>
+        {!media && <Button>See all</Button>}
       </div>
       <div className={classes.creations__grid}>
         {CREATIONS.map((creation) => (
@@ -78,6 +80,11 @@ const Creations = () => {
           />
         ))}
       </div>
+      {media && (
+        <div className={classes.creations__row}>
+          <Button>See all</Button>
+        </div>
+      )}
     </div>
   );
 };

@@ -10,6 +10,15 @@
         padding-left: 6rem;
         padding-top: 6rem;
         color: var(--color-grey);
+        @media only screen and (max-width:768px) {
+            position: unset;  
+            text-align: center;
+            padding-left: unset;
+            margin: auto;
+        }
+        @media only screen and (max-width:460px) {
+         padding-top: 3rem;   
+        }
     }
     &__img{
         max-width: 100%;
@@ -19,9 +28,15 @@
         font-family: var(--heading-font);
         font-size: 3rem;
         margin-bottom: 2rem;
+        @media only screen and (max-width:460px) {
+            font-size: 2rem;
+        }
     }
     &__text{
         font-size: .96rem;
         line-height: 1.5;
+        max-width: 90%;
+        margin: auto;
+
     }
 }

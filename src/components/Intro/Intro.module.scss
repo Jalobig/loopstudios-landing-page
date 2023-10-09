@@ -10,5 +10,12 @@
         border: 2px solid var(--color-white);
         max-width: calc(var(--max-width)/2);
         padding:1.5rem 2rem 0.5rem;
+        @media only screen and (max-width:583px) {
+            font-size: 2.5rem;
+        }
+        @media only screen and (max-width:460px) {
+            padding:1.5rem 1.5rem 0.5rem;
+            
+        }
     }
 }

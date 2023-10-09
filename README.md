@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://Jalobig.github.io/loopstudios-landing-page/)
+- Live Site URL: [Live site here](https://Jalobig.github.io/loopstudios-landing-page/)
 
 ## My process
 
